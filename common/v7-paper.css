@@ -1,0 +1,343 @@
+/* ============================================================
+   V7 纸感手帐 · 全局基座（common/v7-paper.css）
+   目的：把全站页面统一到 V7 纸感色板，作为逐页精修的底座。
+   原则：
+   1) 只改视觉（颜色/圆角/描边/阴影），不改布局与交互；
+   2) 全部选择器都限定在 .xt-page 内，作用域与原设计样式一致；
+   3) 页面内 scoped 样式（.xt-page.xt-sNN .xxx）优先级更高，
+      因此已单独精修过的页面不会被这里覆盖。
+   ============================================================ */
+
+.xt-page {
+  /* ---- V7 设计 token ---- */
+  --v7-bg: #F8F4EC;
+  --v7-card: #FFFDFA;
+  --v7-ink: #22302A;
+  --v7-green: #24493A;
+  --v7-green-mid: #44705A;
+  --v7-ochre: #B2793F;
+  --v7-gray: #6A776E;
+  --v7-gray-2: #A2AAA3;
+  --v7-line: rgba(30, 42, 36, 0.10);
+  --v7-shadow: 0 16px 32px -30px rgba(34, 48, 42, 0.55);
+
+  background: var(--v7-bg);
+  background-image:
+    radial-gradient(420px 300px at 90% -6%, rgba(156, 191, 170, 0.18), transparent 62%),
+    radial-gradient(360px 300px at 0% 104%, rgba(192, 138, 86, 0.12), transparent 60%);
+  color: var(--v7-ink);
+}
+
+/* 手机壳内层同步纸感底色 */
+.xt-page .screen {
+  background: var(--v7-bg);
+  background-image:
+    radial-gradient(420px 300px at 90% -6%, rgba(156, 191, 170, 0.18), transparent 62%),
+    radial-gradient(360px 300px at 0% 104%, rgba(192, 138, 86, 0.12), transparent 60%);
+}
+
+/* ================= 卡片面 ================= */
+.xt-page .task,
+.xt-page .w,
+.xt-page .wcard,
+.xt-page .stat,
+.xt-page .menu,
+.xt-page .post,
+.xt-page .goods,
+.xt-page .prob,
+.xt-page .vote,
+.xt-page .custom-role,
+.xt-page .focus-tip,
+.xt-page .mood-card,
+.xt-page .trip-card,
+.xt-page .pcard,
+.xt-page .notice,
+.xt-page .opt,
+.xt-page .mem-item,
+.xt-page .field,
+.xt-page .bdg,
+.xt-page .vitem,
+.xt-page .set-row,
+.xt-page .postcard-big,
+.xt-page .card2,
+.xt-page .plan,
+.xt-page .bubble.ai,
+.xt-page .in-field,
+.xt-page .suggest .si,
+.xt-page .suggest .add,
+.xt-page .icon-btn,
+.xt-page .auth-3rd span,
+.xt-page .route,
+.xt-page .ticket,
+.xt-page .pc2 {
+  background: var(--v7-card);
+  box-shadow: var(--v7-shadow), inset 0 0 0 1px var(--v7-line);
+}
+
+/* 需要更柔和的嵌套卡（避免阴影叠加过重） */
+.xt-page .suggest .si,
+.xt-page .suggest .add,
+.xt-page .icon-btn,
+.xt-page .opt,
+.xt-page .field,
+.xt-page .in-field {
+  box-shadow: inset 0 0 0 1px var(--v7-line);
+}
+
+/* ================= 主色：墨绿 ================= */
+.xt-page .chip.on,
+.xt-page .seg span.on,
+.xt-page .seg .on,
+.xt-page .pill.on,
+.xt-page .mood .face.on {
+  background: var(--v7-green) !important;
+  color: #F8F3E7 !important;
+}
+
+.xt-page .chip {
+  background: var(--v7-card);
+  color: var(--v7-gray);
+  box-shadow: inset 0 0 0 1px var(--v7-line);
+}
+
+.xt-page .btn,
+.xt-page .auth-btn,
+.xt-page .buy,
+.xt-page .save,
+.xt-page .create-btn {
+  background: linear-gradient(135deg, var(--v7-green-mid), #274B3A) !important;
+  border-radius: 14px !important;
+}
+
+/* ================= 文案层级 ================= */
+.xt-page .page-sub,
+.xt-page .case-note {
+  color: var(--v7-gray);
+}
+
+.xt-page .case-pains {
+  color: #9D9287;
+}
+
+/* ================= 通用工具类（新页面直接套） ================= */
+.xt-page .v7-card {
+  background: var(--v7-card);
+  border-radius: 18px;
+  box-shadow: var(--v7-shadow), inset 0 0 0 1px var(--v7-line);
+}
+
+.xt-page .v7-card-soft {
+  background: rgba(255, 253, 250, 0.62);
+  border-radius: 16px;
+  box-shadow: inset 0 0 0 1px var(--v7-line);
+}
+
+.xt-page .v7-title {
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: -0.4px;
+  color: var(--v7-ink);
+  line-height: 1.15;
+}
+
+.xt-page .v7-sub {
+  margin-top: 5px;
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--v7-gray-2);
+}
+
+.xt-page .v7-kicker {
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: var(--v7-ochre);
+}
+
+.xt-page .v7-btn {
+  height: 44px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  color: #FFFDFA;
+  background: linear-gradient(135deg, var(--v7-green-mid), #274B3A);
+  box-shadow: 0 14px 26px -14px rgba(46, 86, 67, 0.7);
+}
+
+.xt-page .v7-btn-ghost {
+  height: 40px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--v7-green);
+  background: rgba(255, 253, 250, 0.8);
+  box-shadow: inset 0 0 0 1px var(--v7-line);
+}
+
+.xt-page .v7-quote {
+  font-family: "Kaiti SC", "STKaiti", KaiTi, "楷体", serif;
+  font-size: 11.5px;
+  line-height: 1.9;
+  color: #55594D;
+}
+
+.xt-page .v7-divider {
+  height: 1px;
+  background: var(--v7-line);
+}
+
+.xt-page .v7-empty {
+  padding: 26px 16px;
+  text-align: center;
+  font-size: 11px;
+  color: var(--v7-gray-2);
+}
+
+/* ================= 气泡：我的消息同步墨绿 ================= */
+.xt-page .bubble.me {
+  background: linear-gradient(135deg, #4E7A64, #24493A);
+}
+
+/* ================= 我的页（xt-s5）纸感覆盖 =================
+   这些卡片在 xt-design.css 中写成了 .xt-page.xt-s5 .mep-*，
+   这里用同等权重、更靠后的规则覆盖为纸感色。 */
+.xt-page.xt-s5 .mep-hero,
+.xt-page.xt-s5 .mep-bond,
+.xt-page.xt-s5 .mep-b,
+.xt-page.xt-s5 .mep-mu {
+  background: var(--v7-card);
+  box-shadow: var(--v7-shadow), inset 0 0 0 1px var(--v7-line);
+}
+
+.xt-page.xt-s5 .mep-bond .bar i {
+  background: linear-gradient(90deg, #A9C6B4, #24493A);
+}
+
+.xt-page.xt-s5 .mep-p.on .pav {
+  background: linear-gradient(140deg, #AFC7B9, #24493A);
+}
+
+/* =====================================================================
+   V7 精修 · 专注 9 屏（s12 / s48-s54 / s66）
+   这 9 屏的骨架复用 xt-design.css 的共享组件类，旧色值写在
+   `.xt-page .xxx` 里；这里用同等权重、更靠后的规则补上纸感色。
+   页面 scoped 内的少量旧色已同步改到各 .vue 中。
+   ===================================================================== */
+
+/* ---- 进度环：内圈换纸白 ---- */
+.xt-page .ring::before { background: var(--v7-card); }
+.xt-page .ring { box-shadow: 0 20px 40px -30px rgba(34, 48, 42, 0.42); }
+
+/* ---- 纸面输入 ---- */
+.xt-page .mood-input,
+.xt-page .in-plus,
+.xt-page .in-field,
+.xt-page .task-plus {
+  background: rgba(248, 244, 236, 0.92);
+  color: var(--v7-gray);
+  box-shadow: inset 0 0 0 1px var(--v7-line);
+}
+
+/* ---- 三格数据 / 计划 / 看板 ---- */
+.xt-page .pill {
+  background: var(--v7-card);
+  box-shadow: var(--v7-shadow), inset 0 0 0 1px var(--v7-line);
+}
+.xt-page .pill .v { color: var(--v7-ink); }
+.xt-page .mem-hero {
+  background: linear-gradient(135deg, rgba(255, 253, 250, 0.98), rgba(248, 244, 236, 0.96));
+  box-shadow: inset 0 0 0 1px var(--v7-line);
+}
+.xt-page .mod {
+  background: var(--v7-card);
+  box-shadow: var(--v7-shadow), inset 0 0 0 1px var(--v7-line);
+}
+.xt-page .prob {
+  background: var(--v7-card);
+  box-shadow: inset 0 0 0 1px var(--v7-line);
+}
+.xt-page .bcol2 {
+  background: rgba(255, 253, 250, 0.62);
+  box-shadow: inset 0 0 0 1px var(--v7-line);
+}
+.xt-page .card2 {
+  background: var(--v7-card);
+  box-shadow: inset 0 0 0 1px var(--v7-line);
+}
+.xt-page .plan {
+  background: var(--v7-card);
+  box-shadow: inset 0 0 0 1px var(--v7-line);
+}
+.xt-page .plan.on { box-shadow: inset 0 0 0 2px var(--v7-green); }
+
+/* ---- 分段控件 / 时间轴 / 进度条 ---- */
+.xt-page .seg span { background: rgba(255, 253, 250, 0.75); color: var(--v7-gray); }
+.xt-page .seg span.on { background: var(--v7-green); color: #F8F3E7; box-shadow: none; }
+.xt-page .tl-item::before { background: var(--v7-card); box-shadow: 0 0 0 2px #8FB79E; }
+.xt-page .meter { background: rgba(34, 48, 42, 0.07); }
+.xt-page .meter i { background: linear-gradient(90deg, #A9C6B4, #24493A); }
+.xt-page .switch2 { background: rgba(34, 48, 42, 0.10); }
+.xt-page .switch2.on { background: var(--v7-green-mid); }
+
+/* ---- 按钮 ---- */
+.xt-page .fbtn.main {
+  background: linear-gradient(135deg, #4E7A64, #24493A);
+  box-shadow: 0 12px 22px -14px rgba(36, 73, 58, 0.85);
+}
+.xt-page .fbtn.ghost {
+  background: rgba(255, 253, 250, 0.86);
+  color: var(--v7-green);
+  box-shadow: inset 0 0 0 1px var(--v7-line);
+}
+.xt-page .task-go { background: linear-gradient(135deg, #4E7A64, #24493A); }
+
+/* ---- 图表：柱状 / 热力 ---- */
+.xt-page .bars .bcol .bv { background: linear-gradient(180deg, #AFC7B9, #24493A); }
+.xt-page .bars .bcol .bv.dim { background: rgba(34, 48, 42, 0.10); }
+.xt-page .heat i { background: #F1F2EA; }
+.xt-page .heat i.l1 { background: #E3EADF; }
+.xt-page .heat i.l2 { background: #C3D4C8; }
+.xt-page .heat i.l3 { background: #94AE9F; }
+.xt-page .heat i.l4 { background: var(--v7-green-mid); }
+
+/* ---- s66 专注计时：整屏纸感 ---- */
+.xt-page.xt-s66 .screen {
+  background: radial-gradient(76% 48% at 50% -2%, #F4F8F5 0%, #F8F4EC 48%, #F5F2E9 100%) !important;
+}
+.xt-page.xt-s66 .fcs-back,
+.xt-page.xt-s66 .fcs-set,
+.xt-page.xt-s66 .fcs-mode,
+.xt-page.xt-s66 .fcs-presence,
+.xt-page.xt-s66 .fcs-sound {
+  background: rgba(255, 253, 250, 0.78);
+  box-shadow: inset 0 0 0 1px var(--v7-line);
+}
+.xt-page.xt-s66 .fcs-ring::after { background: var(--v7-card); }
+.xt-page.xt-s66 .fcs-sic { background: rgba(156, 191, 170, 0.16); color: var(--v7-green-mid); }
+.xt-page.xt-s66 .fcs-chips span {
+  background: var(--v7-card);
+  color: var(--v7-gray);
+  box-shadow: inset 0 0 0 1px var(--v7-line);
+}
+.xt-page.xt-s66 .fcs-chips span.on {
+  background: var(--v7-green);
+  color: #F8F3E7;
+  box-shadow: none;
+}
+.xt-page.xt-s66 .fcs-ghost {
+  background: rgba(255, 253, 250, 0.78);
+  color: var(--v7-gray);
+  box-shadow: inset 0 0 0 1px var(--v7-line);
+}
+.xt-page.xt-s66 .fcs-quote { color: var(--v7-gray); }
+.xt-page.xt-s66 .fcs-quote b { color: var(--v7-green-mid); }
+.xt-page.xt-s66 .fcs-k,
+.xt-page.xt-s66 .fcs-stats span { color: var(--v7-gray-2); }

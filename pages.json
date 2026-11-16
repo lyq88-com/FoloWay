@@ -1,0 +1,441 @@
+{
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/companion/companion",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/login/login",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/login/register",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/login/recover",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/chat",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/ai-chat/ai-chat",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/stats/stats",
+      "style": { "navigationStyle": "custom" }
+    },
+    {
+      "path": "pages/profile/profile",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/badge/badge",
+      "style": { "navigationStyle": "custom" }
+    },
+    {
+      "path": "pages/avatar-live/avatar-live",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/settings/settings",
+      "style": { "navigationStyle": "custom" }
+    },
+    {
+      "path": "pages/profile-edit/profile-edit",
+      "style": {
+        "navigationBarTitleText": "编辑资料"
+      }
+    },
+    {
+      "path": "pages/box/box",
+      "style": { "navigationStyle": "custom" }
+    },
+    {
+      "path": "pages/box-warehouse/box-warehouse",
+      "style": {
+        "navigationBarTitleText": "我的仓库"
+      }
+    },
+    {
+      "path": "pages/capsule/capsule",
+      "style": {
+        "navigationBarTitleText": "时光胶囊"
+      }
+    },
+    {
+      "path": "pages/fragment/fragment",
+      "style": {
+        "navigationBarTitleText": "碎片图鉴"
+      }
+    },
+    {
+      "path": "pages/postcard/postcard",
+      "style": {
+        "navigationBarTitleText": "往期明信片",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/postcard-gallery/postcard-gallery",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/records/records",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/personality-quiz/personality-quiz",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/character-gallery/character-gallery",
+      "style": { "navigationStyle": "custom" }
+    },
+    {
+      "path": "pages/character-workshop/character-workshop",
+      "style": {
+        "navigationBarTitleText": ""
+      }
+    },
+    {
+      "path": "pages/emotion/emotion",
+      "style": { "navigationStyle": "custom" }
+    },
+    {
+      "path": "pages/meditation/meditation",
+      "style": { "navigationStyle": "custom" }
+    },
+    {
+      "path": "pages/walk/walk",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/growth-track/growth-track",
+      "style": { "navigationStyle": "custom" }
+    },
+    {
+      "path": "pages/growth-archive/growth-archive",
+      "style": { "navigationStyle": "custom" }
+    },
+    {
+      "path": "pages/discover/discover",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/idea/idea-landing",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/idea/idea-publish",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/idea/idea-resonance",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/idea/idea-my",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/idea/idea-chat",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/create/create",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/companion/companion-running",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/role-select/role-select",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/moments/moments",
+      "style": {
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/moments/moment-publish",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/gacha/gacha",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/world/world",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/activity/activity",
+      "style": {
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/dream-ring/dream-ring",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/schedule/schedule",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/group-chat/group-chat",
+      "style": {
+        "navigationBarTitleText": "多角色群聊"
+      }
+    },
+    {
+      "path": "pages/mall/mall",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/bill/bill",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/world-space/world-list",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/world-space/world-detail",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/vip/index",
+      "style": {
+        "navigationBarTitleText": "VIP会员"
+      }
+    },
+    {
+      "path": "pages/vip/pay-success",
+      "style": {
+        "navigationBarTitleText": "支付成功"
+      }
+    },
+    {
+      "path": "pages/memory/memory",
+      "style": { "navigationStyle": "custom" }
+    },
+    {
+      "path": "pages/focus/focus-home",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/focus/focus-guide",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/focus/focus-timer",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/focus/focus-board",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/focus/focus-plan",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/focus/focus-records",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/focus/focus-stats",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/focus/focus-dynamic",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/focus/focus-chat",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/newfunc/notification-center",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/newfunc/push-setting",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/newfunc/bot-manage",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/newfunc/bot-chat",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/newfunc/bot-memory",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/newfunc/voice-setting",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/disclaimer/disclaimer",
+      "style": {
+        "navigationBarTitleText": "免责声明"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "循途",
+    "navigationBarBackgroundColor": "#FFFCF6",
+    "backgroundColor": "#FFFCF6"
+  },
+  "tabBar": {
+    "color": "#AEB6AE",
+    "selectedColor": "#2E5643",
+    "backgroundColor": "#FFFCF6",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "陪伴",
+        "iconPath": "static/images/tab-habit.png",
+        "selectedIconPath": "static/images/tab-habit-active.png"
+      },
+      {
+        "pagePath": "pages/discover/discover",
+        "text": "发现",
+        "iconPath": "static/images/tab-home.png",
+        "selectedIconPath": "static/images/tab-home-active.png"
+      },
+      {
+        "pagePath": "pages/create/create",
+        "text": "",
+        "iconPath": "static/images/tab-plus.png",
+        "selectedIconPath": "static/images/tab-plus-active.png"
+      },
+      {
+        "pagePath": "pages/chat/chat",
+        "text": "消息",
+        "iconPath": "static/images/tab-chat.png",
+        "selectedIconPath": "static/images/tab-chat-active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "static/images/tab-profile.png",
+        "selectedIconPath": "static/images/tab-profile-active.png"
+      }
+    ]
+  },
+  "uniIdRouter": {}
+}

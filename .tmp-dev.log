@@ -1,0 +1,35 @@
+
+> ai-habit-partner-frontend@1.0.0 dev:h5
+> node scripts/uni-cli.js
+
+请注意运行模式下，因日志输出、sourcemap 以及未压缩源码等原因，性能和包体积，均不及发行模式。
+vite是按需编译，运行时点击某个未编译页面会先编译后加载，导致显示较慢，发行后无此问题。
+编译器版本：5.01（vue3）
+正在编译中...
+[36m
+  vite v5.2.8[39m[32m dev server running at:
+[39m
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m8080[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://172.27.64.1:[1m8080[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://172.20.10.3:[1m8080[22m/[39m
+
+  [36mready in 53772ms.[39m
+
+(node:13928) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
